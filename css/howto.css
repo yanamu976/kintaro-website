@@ -1,0 +1,199 @@
+/* ===================================
+   使い方ガイド - 追加スタイル
+   =================================== */
+
+/* Page Header */
+.page-header {
+  padding-top: calc(var(--nav-height) + 60px);
+  padding-bottom: 60px;
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #2a2020 100%);
+  color: #fff;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+}
+
+.page-header p {
+  font-size: 1.15rem;
+  opacity: 0.8;
+}
+
+/* Step sections */
+.step-alt {
+  background: var(--bg-parchment);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.step-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.step-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+/* Step content layout */
+.step-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.step-content.reverse {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.step-content.reverse .step-screenshot {
+  order: 2;
+}
+
+.step-content.reverse .step-description {
+  order: 1;
+}
+
+/* Screenshot styling */
+.step-screenshot {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border);
+}
+
+.step-screenshot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Description */
+.step-description h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.step-points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-points li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.step-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.step-points li strong {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.step-points li span {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Highlight box */
+.step-highlight {
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  border-left: 4px solid var(--green);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9rem;
+  color: var(--green);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .step-content,
+  .step-content.reverse {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .step-content.reverse .step-screenshot,
+  .step-content.reverse .step-description {
+    order: unset;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header {
+    padding-top: calc(var(--nav-height) + 40px);
+    padding-bottom: 40px;
+  }
+
+  .page-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .step-header {
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+
+  .step-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .step-content {
+    gap: 24px;
+  }
+}

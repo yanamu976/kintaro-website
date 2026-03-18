@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="勤太郎シフト - 警備員・交代勤務者の勤務表を自動作成。手作業5〜10日の勤務表作成をAI最適化で3分に。">
+  <title>勤太郎シフト | 勤務表自動作成システム</title>
+  <link rel="icon" href="assets/kintaro.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav transparent">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/kintaro.png" alt="勤太郎シフト">
+        <span>勤太郎シフト</span>
+      </a>
+      <div class="nav-links">
+        <a href="#why">選ばれる理由</a>
+        <a href="howto.html">使い方</a>
+        <a href="#features">機能</a>
+        <a href="#comparison">利用方法</a>
+        <a href="#pricing">料金</a>
+        <a href="#faq">FAQ</a>
+        <a href="#trust">信頼性</a>
+        <a href="#contact">お問い合わせ</a>
+      </div>
+      <button class="nav-hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>すぐに使える勤務表を、<span class="accent">5分</span>で。</h1>
+      <p>手作業で5〜10日かかっていた勤務表作成を、AI最適化エンジンが自動生成。<br>働く人の負担を軽減した勤務表をお届けします。</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">無料相談はこちら</a>
+        <a href="howto.html" class="btn btn-outline">使い方を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Problem / Solution ===== -->
+  <section class="section problem-solution" id="why">
+    <div class="container">
+      <h2 class="section-title">なぜ勤太郎シフトが選ばれるのか</h2>
+      <p class="section-subtitle">勤務表作成の「あるある」を、テクノロジーで解決します</p>
+      <div class="ps-grid">
+        <div class="ps-card problem">
+          <h3>&#x26A0; こんなお悩みありませんか？</h3>
+          <ul>
+            <li>勤務表作成に毎月5〜10日かかっている</li>
+            <li>ベテラン担当者しか作成できない（属人化）</li>
+            <li>連続勤務や過重労働などの制約違反が見落とされる</li>
+            <li>担当者の主観で公平性にばらつきが出る</li>
+            <li>急な変更があると一から作り直し</li>
+          </ul>
+        </div>
+        <div class="ps-card solution">
+          <h3>&#x2714; 勤太郎シフトが解決します</h3>
+          <ul>
+            <li>最短5分でそのまま使える勤務表を自動生成</li>
+            <li>誰でも操作できる直感的なGUI</li>
+            <li>連続勤務制限・休暇希望を100%遵守</li>
+            <li>数学的アルゴリズムで公平に割り当て</li>
+            <li>条件変更後すぐに再生成可能</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title">主な機能</h2>
+      <p class="section-subtitle">Google OR-Tools CP-SATエンジンを搭載した、業務特化型の最適化システム</p>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F9E0;</div>
+          <h3>制約充足型AI最適化</h3>
+          <p>Google OR-Tools CP-SATエンジンを採用。連続勤務の制限・休暇希望・公平な配分などの複雑な制約を同時に満たす最適解を自動で算出します。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F3E2;</div>
+          <h3>複数現場・勤務形態対応</h3>
+          <p>現場ごとに独立管理。泊まり勤務（16h）、日勤（8h）、長日勤（12h）など多様な勤務形態に対応。隔日・休日のみ・平日のみの配置も可能です。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F4CA;</div>
+          <h3>Excel出力（色分け印刷対応）</h3>
+          <p>勤務場所別に色分けされた見やすい勤務表をExcelで出力。A4横1ページに最適化された印刷レイアウト。統計情報シート付き。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F504;</div>
+          <h3>段階的制約緩和</h3>
+          <p>厳密な制約で解が見つからない場合、自動で段階的に制約を緩和。レベル3（厳密）からレベル0（緊急）まで、必ず結果を返します。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x1F4C5;</div>
+          <h3>休暇・希望管理</h3>
+          <p>カレンダーUIで年休・非番可を直感的に入力。前月末勤務の引き継ぎにも対応し、月をまたぐ連続勤務の発生を自動防止します。</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">&#x2699;</div>
+          <h3>優先度マトリクス</h3>
+          <p>スタッフごとに各勤務場所への適性（0〜3）を設定。経験・スキル・新人フラグ・NG相手設定を反映した、きめ細かな配置を実現します。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Comparison ===== -->
+  <section class="section comparison" id="comparison">
+    <div class="container">
+      <h2 class="section-title">2つの利用方法</h2>
+      <p class="section-subtitle">現場の環境に合わせて、デスクトップ版とクラウド版をお選びいただけます</p>
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>デスクトップ版</th>
+              <th>クラウド版</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="label-col">導入方法</td>
+              <td>インストーラーで導入</td>
+              <td>ブラウザでURLを開くだけ</td>
+            </tr>
+            <tr>
+              <td class="label-col">インターネット</td>
+              <td>不要（完全オフライン動作）</td>
+              <td>必要</td>
+            </tr>
+            <tr>
+              <td class="label-col">計算性能</td>
+              <td>PCスペックに依存</td>
+              <td>16コアCPUサーバーで高速処理</td>
+            </tr>
+            <tr>
+              <td class="label-col">複数チーム</td>
+              <td>非対応（1台1チーム）</td>
+              <td>チーム別ログイン対応</td>
+            </tr>
+            <tr>
+              <td class="label-col">アップデート</td>
+              <td>再インストール</td>
+              <td>自動反映（常に最新版）</td>
+            </tr>
+            <tr>
+              <td class="label-col">データ保管</td>
+              <td>PC内（外部送信なし）</td>
+              <td>Google Cloud（暗号化通信）</td>
+            </tr>
+            <tr>
+              <td class="label-col">月額目安</td>
+              <td>&#165;0（買い切り）</td>
+              <td>&#165;3,000〜</td>
+            </tr>
+            <tr>
+              <td class="label-col">おすすめ</td>
+              <td>オフライン環境・データ社外NG</td>
+              <td>複数拠点・低スペックPC環境</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pricing ===== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <h2 class="section-title">料金プラン</h2>
+      <p class="section-subtitle">クラウド版の料金プランです。規模に合わせてお選びください</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <h3>ライト</h3>
+          <div class="pricing-price">&#165;3,000<span>/月</span></div>
+          <p class="pricing-desc">小規模現場向け</p>
+          <ul class="pricing-features">
+            <li>月30回まで生成</li>
+            <li>最大15名まで登録</li>
+            <li>HTTPS暗号化通信</li>
+            <li>チーム別ログイン</li>
+            <li>Excel出力</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">お問い合わせ</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">おすすめ</div>
+          <h3>スタンダード</h3>
+          <div class="pricing-price">&#165;8,000<span>/月</span></div>
+          <p class="pricing-desc">中規模現場向け</p>
+          <ul class="pricing-features">
+            <li>月100回まで生成</li>
+            <li>最大30名まで登録</li>
+            <li>HTTPS暗号化通信</li>
+            <li>チーム別ログイン</li>
+            <li>Excel出力</li>
+            <li>優先サポート</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">お問い合わせ</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>無制限</h3>
+          <div class="pricing-price">&#165;15,000<span>/月</span></div>
+          <p class="pricing-desc">大規模・複数現場向け</p>
+          <ul class="pricing-features">
+            <li>生成回数無制限</li>
+            <li>登録人数無制限</li>
+            <li>HTTPS暗号化通信</li>
+            <li>チーム別ログイン</li>
+            <li>Excel出力</li>
+            <li>優先サポート</li>
+            <li>専用サーバー対応可</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="width:100%;">お問い合わせ</a>
+        </div>
+
+      </div>
+      <p class="pricing-note">※ デスクトップ版は買い切りライセンスです。詳しくはお問い合わせください。</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">よくある質問</h2>
+      <p class="section-subtitle">導入前のご質問にお答えします</p>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">勤務表の生成にどのくらい時間がかかりますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              現場の規模により異なります。6人・2勤務場所の場合は約10〜30秒、10人・3勤務場所で約30〜60秒、24人・8勤務場所で約3〜5分が目安です。クラウド版では16コアCPUによる並列処理で、デスクトップ版より高速に処理できます。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">パソコンのスペックが低くても使えますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              デスクトップ版はWindows 10/11（64bit）、メモリ4GB以上で動作します。スペックが低い場合は処理時間が長くなりますが、動作自体は可能です。クラウド版ならブラウザさえあればスペックに関係なく高速に生成できます。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">インターネットが使えない環境でも使えますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、デスクトップ版は完全オフラインで動作します。インストール後はインターネット接続不要です。セキュリティ上、外部にデータを送信したくない環境に最適です。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">ExcelやPCの操作に詳しくなくても使えますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、直感的なGUI（グラフィカルユーザーインターフェース）を採用しています。カレンダーをクリックして休暇希望を入力し、「生成」ボタンを押すだけで勤務表が完成します。Excelの知識は不要です。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">データのバックアップはどうなっていますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              勤太郎シフトで生成したExcelファイルには、設定データが自動でバックアップされています。万が一データを失っても、過去のExcelファイルからスタッフリスト・勤務場所・優先度設定・前月末勤務情報を丸ごと復元できます（「フェニックス機能」）。勤務表を作るたびに自動バックアップされるので、安心してお使いいただけます。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">セキュリティは大丈夫ですか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              クラウド版はHTTPS暗号化通信（Let's Encrypt証明書）、bcryptパスワード認証、チーム別データ完全分離、2時間自動ログアウト、ログイン試行回数制限（5回/5分）を実装しています。Google Cloudインフラで高い可用性を確保。デスクトップ版はPC内で完結し、外部通信は一切行いません。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">連続勤務の制限はどう管理されますか？</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              勤太郎シフトは、3日以上の連続勤務の禁止や、2日連続勤務の月間回数上限など、労働安全に関わるルールを「絶対制約」として自動管理します。手作業では見落としがちな制約違反を100%防止し、働く人に無理のない勤務表を生成します。
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="section testimonials" id="voice">
+    <div class="container">
+      <h2 class="section-title">導入現場の声</h2>
+      <p class="section-subtitle">実際に勤太郎シフトを導入した現場から届いた改善実績です</p>
+
+      <!-- Before/After Summary -->
+      <div class="results-summary">
+        <div class="results-summary-inner">
+          <div class="results-stat">
+            <span class="results-label">導入前の連続勤務</span>
+            <span class="results-number before">月平均 23回</span>
+          </div>
+          <div class="results-arrow">&#x25B6;</div>
+          <div class="results-stat">
+            <span class="results-label">導入後の連続勤務</span>
+            <span class="results-number after">ほぼ 0回</span>
+          </div>
+        </div>
+        <p class="results-note">※ 5現場での実測値に基づく</p>
+      </div>
+
+      <!-- Voice Cards -->
+      <div class="voice-grid">
+
+        <div class="voice-card">
+          <div class="voice-result">
+            <span class="voice-before">23回/月</span>
+            <span class="voice-arrow">&#x2192;</span>
+            <span class="voice-after">0回/月</span>
+          </div>
+          <p class="voice-text">「毎月23回あった連続勤務がゼロになりました。手作業では絶対にたどり着けない結果です。隊員からも"体が楽になった"と好評でした。」</p>
+          <div class="voice-meta">
+            <span class="voice-role">A警備隊 勤務表担当者</span>
+            <span class="voice-size">8名体制</span>
+          </div>
+        </div>
+
+        <div class="voice-card">
+          <div class="voice-result">
+            <span class="voice-before">27回/月</span>
+            <span class="voice-arrow">&#x2192;</span>
+            <span class="voice-after">0回/月</span>
+          </div>
+          <p class="voice-text">「27回あった連続勤務がゼロに。生成時間も5〜8分程度で、以前は数日かかっていた作業が劇的に短縮されました。パートタイムや見習いの設定にも柔軟に対応してくれます。」</p>
+          <div class="voice-meta">
+            <span class="voice-role">B警備隊 隊長</span>
+            <span class="voice-size">12名体制</span>
+          </div>
+        </div>
+
+        <div class="voice-card">
+          <div class="voice-result">
+            <span class="voice-before">26回/月</span>
+            <span class="voice-arrow">&#x2192;</span>
+            <span class="voice-after">1回/月</span>
+          </div>
+          <p class="voice-text">「新入社員の配置制限や労働時間の上限も考慮した上で、26回の連続勤務を1回まで減らせました。微調整は必要ですが、仮作成版としては十分すぎる精度です。」</p>
+          <div class="voice-meta">
+            <span class="voice-role">C警備隊 勤務表担当者</span>
+            <span class="voice-size">10名体制</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trust ===== -->
+  <section class="section trust" id="trust">
+    <div class="container">
+      <h2 class="section-title">勤太郎シフトが信頼される理由</h2>
+      <p class="section-subtitle">現場の実務から生まれたシステムを、確かな技術基盤が支えています</p>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">&#x1F3ED;</div>
+          <h3>現場発のシステム</h3>
+          <p>勤太郎シフトは、実際の警備現場で勤務表作成に苦労した経験から開発されました。「机上の空論」ではなく、現場の実務で本当に必要な機能だけを搭載しています。</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">&#x1F9EC;</div>
+          <h3>確立された技術基盤</h3>
+          <p>最適化エンジンにはGoogleが開発・公開しているOR-Tools CP-SATを採用。世界中の物流・製造・航空業界で使われている、実績ある制約充足型プログラミング技術です。</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">&#x1F4AA;</div>
+          <h3>大規模現場で実証済み</h3>
+          <p>44名・15勤務場所の大規模現場で実稼働中。217,000通り以上のパターンを探索し、500件以上の制約違反を自動回避する処理を日常的に実行しています。</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon">&#x1F512;</div>
+          <h3>エンタープライズ品質のセキュリティ</h3>
+          <p>HTTPS暗号化、bcryptパスワード認証、チーム別データ完全分離。クラウド版はGoogle Cloudインフラ上で稼働し、企業利用に耐えるセキュリティを実装しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>まずは無料でご相談ください</h2>
+      <p>導入のご相談、デモのご依頼、お見積もりなど、お気軽にお問い合わせください。</p>
+      <a href="mailto:info@example.com" class="btn">お問い合わせ</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="assets/kintaro.png" alt="勤太郎シフト">
+      <span>&copy; 2026 勤太郎シフト. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
